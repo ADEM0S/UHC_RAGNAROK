@@ -1,0 +1,25 @@
+name: UHC-Naruto
+version: 0.1
+main: be.teammc.uhc.UHC
+api-version: 1.8
+description: UHC sur le theme de Naruto et la 4eme grande guerre shinobi
+
+commands:
+  uhc:
+    description: "uhc manene"
+    usage: "Usage : /uhc <keyword> [args] \n  /uhc help => pour les commandes possibles"
+  spawn:
+    description: "tp en 0, 249, 0 (le spawn)"
+    usage: "Usage : /spawn O"
+    aliases : [s]
+  role:
+    description: "savoir ton role"
+    usage: /role
+
+permissions:
+  admin.permission:
+    description: Admin permissions for the UHC server.
+    default: op
+    children:
+        command.uhc: true
+        command.spawn: true
